@@ -1,12 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.wongnai.interview.movie.external.MovieDataServiceImplIntegrationTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 4.158 s <<< FAILURE! - in com.wongnai.interview.movie.external.MovieDataServiceImplIntegrationTest
-testMappingDataCorrectly(com.wongnai.interview.movie.external.MovieDataServiceImplIntegrationTest)  Time elapsed: 0.045 s  <<< ERROR!
-java.lang.NullPointerException
-	at com.wongnai.interview.movie.external.MovieDataServiceImplIntegrationTest.testMappingDataCorrectly(MovieDataServiceImplIntegrationTest.java:29)
-
-testFetchAll(com.wongnai.interview.movie.external.MovieDataServiceImplIntegrationTest)  Time elapsed: 0.002 s  <<< ERROR!
-java.lang.NullPointerException
-	at com.wongnai.interview.movie.external.MovieDataServiceImplIntegrationTest.testFetchAll(MovieDataServiceImplIntegrationTest.java:23)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.294 s - in com.wongnai.interview.movie.external.MovieDataServiceImplIntegrationTest
