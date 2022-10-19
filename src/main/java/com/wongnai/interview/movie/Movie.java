@@ -1,53 +1,50 @@
 package com.wongnai.interview.movie;
 
+import lombok.Data;
+
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.ElementCollection;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
 @Entity
+@Data
 public class Movie {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-	private String name;
+    private String name;
 
-	@ElementCollection(fetch = FetchType.EAGER)
-	private List<String> actors = new ArrayList<>();
+    @ElementCollection(fetch = FetchType.EAGER)
+    private List<String> actors = new ArrayList<>();
 
-	/**
-	 * Required by JPA.
-	 */
-	protected Movie() {
-	}
+    /**
+     * Required by JPA.
+     */
+    protected Movie() {
+    }
 
-	public Movie(String name) {
-		this.name = name;
-	}
+    public Movie(String name) {
+        this.name = name;
+    }
 
-	public Long getId() {
-		return id;
-	}
+    public Long getId() {
+        return id;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public List<String> getActors() {
-		return actors;
-	}
+    public List<String> getActors() {
+        return actors;
+    }
 
-	public void setActors(List<String> actors) {
-		this.actors = actors;
-	}
+    public void setActors(List<String> actors) {
+        this.actors = actors;
+    }
 }
